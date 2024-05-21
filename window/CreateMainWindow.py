@@ -8,7 +8,6 @@ class CreateMainWindow(tk.Tk):
         self.title("atc helper")
         self.attributes('-topmost', True)
         self.frame = tk.Frame(self)
-        self.frame.pack()
         self.state = False
-        self.minsize(400, 400)
+        self.minsize(300, 400)
         self.eval('tk::PlaceWindow . center')
