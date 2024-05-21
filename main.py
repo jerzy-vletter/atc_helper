@@ -48,7 +48,7 @@ if __name__ == '__main__':
     # input fields | logic (for buttons / OptionMenus / etc.)
     aircraft_needs = StringVar()
     aircraft_needs.set("clearance")
-    needs = ['clearance', 'pushback', 'taxi']
+    needs_list = ['clearance', 'pushback', 'taxi']
 
     button_text = StringVar()
     button_text.set("submit aircraft")
@@ -56,7 +56,7 @@ if __name__ == '__main__':
     # input fields | fields
     aircraft_name_field = Entry(add_aircraft_window)
     aircraft_type_field = Entry(add_aircraft_window)
-    aircraft_need_field = OptionMenu(add_aircraft_window, aircraft_needs, *needs)
+    aircraft_need_field = OptionMenu(add_aircraft_window, aircraft_needs, *needs_list)
 
     # submit button
     submit_button = Button(add_aircraft_window, textvariable=button_text, command=lambda: push_aircraft())
