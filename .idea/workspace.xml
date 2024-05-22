@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d552f191-72b9-47c1-8404-910b39de572f" name="Changes" comment="V0.5&#10;set up the main file, add first field.">
+    <list default="true" id="d552f191-72b9-47c1-8404-910b39de572f" name="Changes" comment="V1.1&#10;changed list name needs -&gt; needs_list, forgot that I needed needs variable in the push_aircraft function">
+      <change afterPath="$PROJECT_DIR$/functions/populateWindow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions/queueAircraft.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/window/CreateQueueWindow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/window/CreateMainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/window/CreateMainWindow.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,11 +108,29 @@
       <option name="project" value="LOCAL" />
       <updated>1716260414876</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="V1.0&#10;set up the ui for the main window, just needs linking to the different windows / window and sorting on those windows / window">
+      <option name="closed" value="true" />
+      <created>1716305133834</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716305133834</updated>
+    </task>
+    <task id="LOCAL-00003" summary="V1.1&#10;changed list name needs -&gt; needs_list, forgot that I needed needs variable in the push_aircraft function">
+      <option name="closed" value="true" />
+      <created>1716305286641</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716305286641</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="V0.5&#10;set up the main file, add first field." />
-    <option name="LAST_COMMIT_MESSAGE" value="V0.5&#10;set up the main file, add first field." />
+    <MESSAGE value="V1.0&#10;set up the ui for the main window, just needs linking to the different windows / window and sorting on those windows / window" />
+    <MESSAGE value="V1.1&#10;changed list name needs -&gt; needs_list, forgot that I needed needs variable in the push_aircraft function" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.1&#10;changed list name needs -&gt; needs_list, forgot that I needed needs variable in the push_aircraft function" />
   </component>
 </project>

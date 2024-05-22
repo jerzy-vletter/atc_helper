@@ -3,22 +3,20 @@
 from tkinter import *
 from tkinter import messagebox
 from window.CreateMainWindow import CreateMainWindow
+from functions.queueAircraft import queue_aircraft
 
 
 def push_aircraft():
+    valid_needs = ['clearance', 'pushback', 'taxi']
+
     name = aircraft_name_field.get()
-    type = aircraft_type_field.get()
+    a_type = aircraft_type_field.get()
     needs = format(aircraft_needs.get())
 
-    match needs:
-        case "clearance":
-            print('clearance')
-        case "pushback":
-            print('pushback')
-        case "taxi":
-            print('taxi')
-        case _:
-            messagebox.showinfo("WARNING", "i don't know how, but you broke the selection list...")
+    if needs not in valid_needs:
+        messagebox.showinfo("WARNING", "i don't know how, but you broke the selection list...")
+    else:
+        queue_aircraft(name, a_type, needs)
 
 
 # Press the green button in the gutter to run the script.
