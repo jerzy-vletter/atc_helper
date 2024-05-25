@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d552f191-72b9-47c1-8404-910b39de572f" name="Changes" comment="V1.1&#10;changed list name needs -&gt; needs_list, forgot that I needed needs variable in the push_aircraft function">
-      <change afterPath="$PROJECT_DIR$/functions/populateWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/queueAircraft.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/window/CreateQueueWindow.py" afterDir="false" />
+    <list default="true" id="d552f191-72b9-47c1-8404-910b39de572f" name="Changes" comment="V1.2&#10;added more functionality for the processing off the data, second window now in use, data population needs to be done in main.py (&lt;- change still needed)">
+      <change afterPath="$PROJECT_DIR$/waitingAircraft.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/populateWindow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/queueAircraft.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/queueAircraft.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,13 +123,22 @@
       <option name="project" value="LOCAL" />
       <updated>1716305286641</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="V1.2&#10;added more functionality for the processing off the data, second window now in use, data population needs to be done in main.py (&lt;- change still needed)">
+      <option name="closed" value="true" />
+      <created>1716343985390</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716343985390</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="V0.5&#10;set up the main file, add first field." />
     <MESSAGE value="V1.0&#10;set up the ui for the main window, just needs linking to the different windows / window and sorting on those windows / window" />
     <MESSAGE value="V1.1&#10;changed list name needs -&gt; needs_list, forgot that I needed needs variable in the push_aircraft function" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.1&#10;changed list name needs -&gt; needs_list, forgot that I needed needs variable in the push_aircraft function" />
+    <MESSAGE value="V1.2&#10;added more functionality for the processing off the data, second window now in use, data population needs to be done in main.py (&lt;- change still needed)" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.2&#10;added more functionality for the processing off the data, second window now in use, data population needs to be done in main.py (&lt;- change still needed)" />
   </component>
 </project>
