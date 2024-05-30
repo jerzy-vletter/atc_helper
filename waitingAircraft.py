@@ -68,17 +68,18 @@ def populatewindow(queued_aircraft: dict):
             pass
 
 
-def repopulate(populated: list, queued_aircraft):
+def repopulate(populated: list, queued_aircraft: dict):
+    counter = 0
     queue_window.columnconfigure((0, 1, 2, 3), weight=1)
     queue_window.rowconfigure((0, 1, 2, 3, 4, 5, 6), weight=1)
 
-    for i in range(len(populated)):
+    keys = queued_aircraft.keys()
 
-        name = queued_aircraft[i][0]
-        a_type = queued_aircraft[i][1]
-        needs = queued_aircraft[i][2]
+    for key in keys:
 
-        key = i
+        name = queued_aircraft[key][0]
+        a_type = queued_aircraft[key][1]
+        needs = queued_aircraft[key][2]
 
         label_var = StringVar()
         populate_name = Label(queue_window, textvariable=label_var)
@@ -95,12 +96,14 @@ def repopulate(populated: list, queued_aircraft):
         button_text = StringVar()
         button_text.set("X")
         del_button = Button(queue_window, textvariable=button_text,
-                            command=lambda: delete_aircraft(name, populated, queued_aircraft, key))
+                            command=lambda n=name, k=key: delete_aircraft(n, populated, queued_aircraft, k))
 
-        populate_name.grid(row=i, column=0, sticky='w')
-        populate_type.grid(row=i, column=1, sticky='w')
-        populate_needs.grid(row=i, column=2, sticky='w')
-        del_button.grid(row=i, column=3, sticky='w')
+        populate_name.grid(row=counter, column=0, sticky='w')
+        populate_type.grid(row=counter, column=1, sticky='w')
+        populate_needs.grid(row=counter, column=2, sticky='w')
+        del_button.grid(row=counter, column=3, sticky='w')
+
+        counter += 1
 
         if name not in populated:
             populated.append(name)

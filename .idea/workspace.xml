@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d552f191-72b9-47c1-8404-910b39de572f" name="Changes" comment="V1.2&#10;added more functionality for the processing off the data, second window now in use, data population needs to be done in main.py (&lt;- change still needed)">
-      <change afterPath="$PROJECT_DIR$/waitingAircraft.py" afterDir="false" />
+    <list default="true" id="d552f191-72b9-47c1-8404-910b39de572f" name="Changes" comment="V1.3&#10;moved functionality for secondary window to waitingAircraft.py,&#10;waitingAircraft.py:&#10;+ grid system&#10;+ all display logic&#10;+ delete button that kicks items from all lists">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/populateWindow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/queueAircraft.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/queueAircraft.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waitingAircraft.py" beforeDir="false" afterPath="$PROJECT_DIR$/waitingAircraft.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716343985390</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="V1.3&#10;moved functionality for secondary window to waitingAircraft.py,&#10;waitingAircraft.py:&#10;+ grid system&#10;+ all display logic&#10;+ delete button that kicks items from all lists">
+      <option name="closed" value="true" />
+      <created>1716658175509</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716658175509</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -139,6 +145,7 @@
     <MESSAGE value="V1.0&#10;set up the ui for the main window, just needs linking to the different windows / window and sorting on those windows / window" />
     <MESSAGE value="V1.1&#10;changed list name needs -&gt; needs_list, forgot that I needed needs variable in the push_aircraft function" />
     <MESSAGE value="V1.2&#10;added more functionality for the processing off the data, second window now in use, data population needs to be done in main.py (&lt;- change still needed)" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.2&#10;added more functionality for the processing off the data, second window now in use, data population needs to be done in main.py (&lt;- change still needed)" />
+    <MESSAGE value="V1.3&#10;moved functionality for secondary window to waitingAircraft.py,&#10;waitingAircraft.py:&#10;+ grid system&#10;+ all display logic&#10;+ delete button that kicks items from all lists" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.3&#10;moved functionality for secondary window to waitingAircraft.py,&#10;waitingAircraft.py:&#10;+ grid system&#10;+ all display logic&#10;+ delete button that kicks items from all lists" />
   </component>
 </project>
