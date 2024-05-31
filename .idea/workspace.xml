@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d552f191-72b9-47c1-8404-910b39de572f" name="Changes" comment="V1.3&#10;moved functionality for secondary window to waitingAircraft.py,&#10;waitingAircraft.py:&#10;+ grid system&#10;+ all display logic&#10;+ delete button that kicks items from all lists">
+    <list default="true" id="d552f191-72b9-47c1-8404-910b39de572f" name="Changes" comment="V1.5.1&#10;waitingAircraft.py:&#10;error cleanup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waitingAircraft.py" beforeDir="false" afterPath="$PROJECT_DIR$/waitingAircraft.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +136,31 @@
       <option name="project" value="LOCAL" />
       <updated>1716658175509</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="V1.4&#10;waitingAircraft.py:&#10;- fixed a bug where if you remove the first value the code would break.&#10;- fixed follow-up bug where if you remove any item except the last one it would remove the last one">
+      <option name="closed" value="true" />
+      <created>1717084098802</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717084098802</updated>
+    </task>
+    <task id="LOCAL-00007" summary="V1.5&#10;waitingAircraft.py:&#10;- added an update function that advances the need of an aircraft waiting, function self checks if there are any clearances left to give.">
+      <option name="closed" value="true" />
+      <created>1717130257089</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717130257089</updated>
+    </task>
+    <task id="LOCAL-00008" summary="V1.5.1&#10;waitingAircraft.py:&#10;error cleanup">
+      <option name="closed" value="true" />
+      <created>1717130739408</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717130739408</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -146,6 +169,9 @@
     <MESSAGE value="V1.1&#10;changed list name needs -&gt; needs_list, forgot that I needed needs variable in the push_aircraft function" />
     <MESSAGE value="V1.2&#10;added more functionality for the processing off the data, second window now in use, data population needs to be done in main.py (&lt;- change still needed)" />
     <MESSAGE value="V1.3&#10;moved functionality for secondary window to waitingAircraft.py,&#10;waitingAircraft.py:&#10;+ grid system&#10;+ all display logic&#10;+ delete button that kicks items from all lists" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.3&#10;moved functionality for secondary window to waitingAircraft.py,&#10;waitingAircraft.py:&#10;+ grid system&#10;+ all display logic&#10;+ delete button that kicks items from all lists" />
+    <MESSAGE value="V1.4&#10;waitingAircraft.py:&#10;- fixed a bug where if you remove the first value the code would break.&#10;- fixed follow-up bug where if you remove any item except the last one it would remove the last one" />
+    <MESSAGE value="V1.5&#10;waitingAircraft.py:&#10;- added an update function that advances the need of an aircraft waiting, function self checks if there are any clearances left to give." />
+    <MESSAGE value="V1.5.1&#10;waitingAircraft.py:&#10;error cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.5.1&#10;waitingAircraft.py:&#10;error cleanup" />
   </component>
 </project>

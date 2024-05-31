@@ -165,3 +165,7 @@ def update_aircraft(name, a_type, needs, key, queued_aircraft):
     else:
         messagebox.showinfo("WARNING", "i don't know how, but " + name +
                             " needs something that wasn't programmed, pls contact the creator")
+
+
+def to_many_aircraft_warning():
+    messagebox.showinfo("WARNING", "You already have 10 aircraft waiting for something, go clean those up")

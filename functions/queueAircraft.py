@@ -1,5 +1,6 @@
 
 from waitingAircraft import populatewindow
+from waitingAircraft import to_many_aircraft_warning
 
 queued_aircraft = {}
 
@@ -11,10 +12,13 @@ def queue_aircraft(name, a_type, needs):
     needs = needs
     key = len(queued_aircraft)
 
-    if key == 0:
-        queued_aircraft[key] = [name, a_type, needs]
-        populatewindow(queued_aircraft)
+    if len(queued_aircraft) != 10:
+        if key == 0:
+            queued_aircraft[key] = [name, a_type, needs]
+            populatewindow(queued_aircraft)
+        else:
+            key = len(queued_aircraft)
+            queued_aircraft[key] = [name, a_type, needs]
+            populatewindow(queued_aircraft)
     else:
-        key = len(queued_aircraft)
-        queued_aircraft[key] = [name, a_type, needs]
-        populatewindow(queued_aircraft)
+        to_many_aircraft_warning()
