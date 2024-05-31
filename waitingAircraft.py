@@ -44,8 +44,6 @@ def populatewindow(queued_aircraft: dict):
     for i in range(len(queued_aircraft)):
 
         name = queued_aircraft[i][0]
-        a_type = queued_aircraft[i][1]
-        needs = queued_aircraft[i][2]
 
         key = i
 
@@ -153,7 +151,7 @@ def delete_aircraft(name, populated, queued_aircraft, key):
 
 def update_aircraft(name, a_type, needs, key, queued_aircraft):
 
-    valid_needs = ['clearance', 'pushback', 'taxi']
+    valid_needs = ['clearance', 'pushback', 'taxi', 'takeoff']
     if needs in valid_needs:
         index = valid_needs.index(needs)
         if index < len(valid_needs) - 1:

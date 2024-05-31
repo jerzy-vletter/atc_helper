@@ -6,8 +6,8 @@ from window.CreateMainWindow import CreateMainWindow
 from functions.queueAircraft import queue_aircraft
 
 
-def push_aircraft():
-    valid_needs = ['clearance', 'pushback', 'taxi']
+def push_aircraft(needs_list):
+    valid_needs = needs_list
 
     name = aircraft_name_field.get()
     a_type = aircraft_type_field.get()
@@ -46,7 +46,7 @@ if __name__ == '__main__':
     # input fields | logic (for buttons / OptionMenus / etc.)
     aircraft_needs = StringVar()
     aircraft_needs.set("clearance")
-    needs_list = ['clearance', 'pushback', 'taxi']
+    needs_list = ['clearance', 'pushback', 'taxi', 'takeoff']
 
     button_text = StringVar()
     button_text.set("submit aircraft")
@@ -57,7 +57,7 @@ if __name__ == '__main__':
     aircraft_need_field = OptionMenu(add_aircraft_window, aircraft_needs, *needs_list)
 
     # submit button
-    submit_button = Button(add_aircraft_window, textvariable=button_text, command=lambda: push_aircraft())
+    submit_button = Button(add_aircraft_window, textvariable=button_text, command=lambda: push_aircraft(needs_list))
 
     # defining the grid
     add_aircraft_window.columnconfigure((0, 1, 2), weight=1)

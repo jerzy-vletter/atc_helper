@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d552f191-72b9-47c1-8404-910b39de572f" name="Changes" comment="V1.5.1&#10;waitingAircraft.py:&#10;error cleanup">
+    <list default="true" id="d552f191-72b9-47c1-8404-910b39de572f" name="Changes" comment="V1.6&#10;waitingAircraft.py:&#10;- added warning function that is used elsewhere.&#10;queueAircraft.py:&#10;- added check to prevent to many aircraft being added to the list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +50,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
@@ -160,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717130739408</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="V1.6&#10;waitingAircraft.py:&#10;- added warning function that is used elsewhere.&#10;queueAircraft.py:&#10;- added check to prevent to many aircraft being added to the list">
+      <option name="closed" value="true" />
+      <created>1717174583826</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717174583826</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -172,6 +180,7 @@
     <MESSAGE value="V1.4&#10;waitingAircraft.py:&#10;- fixed a bug where if you remove the first value the code would break.&#10;- fixed follow-up bug where if you remove any item except the last one it would remove the last one" />
     <MESSAGE value="V1.5&#10;waitingAircraft.py:&#10;- added an update function that advances the need of an aircraft waiting, function self checks if there are any clearances left to give." />
     <MESSAGE value="V1.5.1&#10;waitingAircraft.py:&#10;error cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.5.1&#10;waitingAircraft.py:&#10;error cleanup" />
+    <MESSAGE value="V1.6&#10;waitingAircraft.py:&#10;- added warning function that is used elsewhere.&#10;queueAircraft.py:&#10;- added check to prevent to many aircraft being added to the list" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.6&#10;waitingAircraft.py:&#10;- added warning function that is used elsewhere.&#10;queueAircraft.py:&#10;- added check to prevent to many aircraft being added to the list" />
   </component>
 </project>
