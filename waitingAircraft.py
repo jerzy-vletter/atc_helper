@@ -3,16 +3,20 @@ from window.CreateQueueWindow import CreateQueueWindow
 from tkinter import *
 from tkinter import messagebox  # type: ignore
 
-populated = []
+"""
+explanation time, this variable needs to exist on a global level to prevent warnings, it doesn't have to do anything yet
+warning in question: queue_window doesn't get assigned at module level, because it gets assigned in a if statement.
+"""
+queue_window = ...
 
+populated = []
 window_exists = False
 grid_col = 5
 grid_row = 10
 
 
-# noinspection PyGlobalUndefined
-def reloadwindow(exists: bool, queued_aircraft):  # Rename the parameter
-    global window_exists  # Explicitly reference the global variable
+def reloadwindow(exists: bool, queued_aircraft):
+    global window_exists
     global queue_window
     if not exists:
         queue_window = CreateQueueWindow()
