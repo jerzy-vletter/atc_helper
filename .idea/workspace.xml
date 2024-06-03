@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d552f191-72b9-47c1-8404-910b39de572f" name="Changes" comment="V1.6&#10;waitingAircraft.py:&#10;- added warning function that is used elsewhere.&#10;queueAircraft.py:&#10;- added check to prevent to many aircraft being added to the list">
+    <list default="true" id="d552f191-72b9-47c1-8404-910b39de572f" name="Changes" comment="V1.6.1&#10;waitingAircraft.py:&#10;- removed redundant code&#10;- updated valid_needs list with a new valid need&#10;main.py&#10;- updated needs_list with a new valid need&#10;- removed redundant code with a reference to existing list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/queueAircraft.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/queueAircraft.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waitingAircraft.py" beforeDir="false" afterPath="$PROJECT_DIR$/waitingAircraft.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +42,9 @@
     &quot;accountId&quot;: &quot;7817e2a7-43a5-4e7c-b80a-da414c52f69c&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -50,7 +56,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
@@ -168,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717174583826</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="V1.6.1&#10;waitingAircraft.py:&#10;- removed redundant code&#10;- updated valid_needs list with a new valid need&#10;main.py&#10;- updated needs_list with a new valid need&#10;- removed redundant code with a reference to existing list">
+      <option name="closed" value="true" />
+      <created>1717191761641</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717191761641</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -181,6 +195,7 @@
     <MESSAGE value="V1.5&#10;waitingAircraft.py:&#10;- added an update function that advances the need of an aircraft waiting, function self checks if there are any clearances left to give." />
     <MESSAGE value="V1.5.1&#10;waitingAircraft.py:&#10;error cleanup" />
     <MESSAGE value="V1.6&#10;waitingAircraft.py:&#10;- added warning function that is used elsewhere.&#10;queueAircraft.py:&#10;- added check to prevent to many aircraft being added to the list" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.6&#10;waitingAircraft.py:&#10;- added warning function that is used elsewhere.&#10;queueAircraft.py:&#10;- added check to prevent to many aircraft being added to the list" />
+    <MESSAGE value="V1.6.1&#10;waitingAircraft.py:&#10;- removed redundant code&#10;- updated valid_needs list with a new valid need&#10;main.py&#10;- updated needs_list with a new valid need&#10;- removed redundant code with a reference to existing list" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.6.1&#10;waitingAircraft.py:&#10;- removed redundant code&#10;- updated valid_needs list with a new valid need&#10;main.py&#10;- updated needs_list with a new valid need&#10;- removed redundant code with a reference to existing list" />
   </component>
 </project>

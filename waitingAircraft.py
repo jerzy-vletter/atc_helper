@@ -50,16 +50,11 @@ def populatewindow(queued_aircraft: dict):
         if name not in populated:
 
             name = queued_aircraft[key][0]
-            a_type = queued_aircraft[key][1]
-            needs = queued_aircraft[key][2]
+            needs = queued_aircraft[key][1]
 
             label_var = StringVar()
             populate_name = Label(queue_window, textvariable=label_var)
             label_var.set("aircraft: " + name)
-
-            label_var = StringVar()
-            populate_type = Label(queue_window, textvariable=label_var)
-            label_var.set("type: " + a_type)
 
             label_var = StringVar()
             populate_needs = Label(queue_window, textvariable=label_var)
@@ -73,11 +68,10 @@ def populatewindow(queued_aircraft: dict):
             update_text = StringVar()
             update_text.set("update")
             update_button = Button(queue_window, textvariable=update_text,
-                                   command=lambda n=name, a=a_type, ne=needs, k=key:
-                                   update_aircraft(n, a, ne, k, queued_aircraft))
+                                   command=lambda n=name, ne=needs, k=key:
+                                   update_aircraft(n, ne, k, queued_aircraft))
 
             populate_name.grid(row=counter, column=0, sticky='w')
-            populate_type.grid(row=counter, column=1, sticky='w')
             populate_needs.grid(row=counter, column=2, sticky='w')
             del_button.grid(row=counter, column=3, sticky='w')
             update_button.grid(row=counter, column=4, sticky='w')
@@ -102,16 +96,11 @@ def repopulate(populated: list, queued_aircraft: dict):
     for key in keys:
 
         name = queued_aircraft[key][0]
-        a_type = queued_aircraft[key][1]
-        needs = queued_aircraft[key][2]
+        needs = queued_aircraft[key][1]
 
         label_var = StringVar()
         populate_name = Label(queue_window, textvariable=label_var)
         label_var.set("aircraft: " + name)
-
-        label_var = StringVar()
-        populate_type = Label(queue_window, textvariable=label_var)
-        label_var.set("type: " + a_type)
 
         label_var = StringVar()
         populate_needs = Label(queue_window, textvariable=label_var)
@@ -125,11 +114,10 @@ def repopulate(populated: list, queued_aircraft: dict):
         update_text = StringVar()
         update_text.set("update")
         update_button = Button(queue_window, textvariable=update_text,
-                               command=lambda n=name, a=a_type, ne=needs, k=key:
-                               update_aircraft(n, a, ne, k, queued_aircraft))
+                               command=lambda n=name, ne=needs, k=key:
+                               update_aircraft(n, ne, k, queued_aircraft))
 
         populate_name.grid(row=counter, column=0, sticky='w')
-        populate_type.grid(row=counter, column=1, sticky='w')
         populate_needs.grid(row=counter, column=2, sticky='w')
         del_button.grid(row=counter, column=3, sticky='w')
         update_button.grid(row=counter, column=4, sticky='w')
@@ -149,14 +137,14 @@ def delete_aircraft(name, populated, queued_aircraft, key):
     reloadwindow(window_exists, queued_aircraft)
 
 
-def update_aircraft(name, a_type, needs, key, queued_aircraft):
+def update_aircraft(name, needs, key, queued_aircraft):
 
     valid_needs = ['clearance', 'pushback', 'taxi', 'takeoff']
     if needs in valid_needs:
         index = valid_needs.index(needs)
         if index < len(valid_needs) - 1:
             new_needs = valid_needs[index + 1]
-            queued_aircraft.update({key: [name, a_type, new_needs]})
+            queued_aircraft.update({key: [name, new_needs]})
             reloadwindow(window_exists, queued_aircraft)
         else:
             delete_aircraft(name, populated, queued_aircraft, key)
